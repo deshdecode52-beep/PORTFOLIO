@@ -1,4 +1,3 @@
-```markdown
 # Dhruv Gupta — Personal Portfolio
 
 A responsive personal portfolio showcasing Dhruv's background, skills,
@@ -77,4 +76,4 @@ Never put API keys in frontend JavaScript or commit them to GitHub.
 ## Live Website
 
 Add your deployed Vercel URL here after deployment.
-```
+
