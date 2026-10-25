@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Dhruv Gupta's personal portfolio — Computer Science Engineering student, aspiring software engineer, and technology enthusiast.">
+  <meta name="theme-color" content="#f4f8fc">
+
+  <title>Dhruv Gupta | Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="Dhruv Gupta home">Dhruv<span>.</span></a>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" type="button">
+          🌙 <span>Dark mode</span>
+        </button>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+          aria-label="Toggle navigation">
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#chatbot">AI Chatbot</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="top" class="hero">
+      <p class="eyebrow">COMPUTER SCIENCE ENGINEERING STUDENT</p>
+
+      <h1>Hi, I'm <span>Dhruv Gupta.</span></h1>
+
+      <p class="lede">
+        I enjoy solving problems, exploring technology, and building
+        solutions that make a difference. I'm strengthening my programming
+        fundamentals, practising data structures and algorithms, and
+        exploring backend engineering.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">Explore My Work ↗</a>
+        <a class="btn btn-ghost" href="#contact">Let's Connect</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">01 / GET TO KNOW ME</p>
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <p>
+          Hey! I'm Dhruv Gupta, a Computer Science Engineering student at
+          JECRC University in Jaipur, India. I'm interested in software
+          development, problem-solving, and understanding the technology
+          that powers the applications we use every day.
+        </p>
+
+        <p>
+          I'm strengthening my programming fundamentals, practising data
+          structures and algorithms, and exploring backend development.
+          I enjoy working on practical projects, learning new tools, and
+          turning ideas into working applications.
+        </p>
+
+        <dl class="meta-list">
+          <div>
+            <dt>Location</dt>
+            <dd>Jaipur, India</dd>
+          </div>
+          <div>
+            <dt>Education</dt>
+            <dd>B.Tech in Computer Science</dd>
+          </div>
+          <div>
+            <dt>Current Focus</dt>
+            <dd>Programming &amp; Backend Development</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">02 / WHAT I'M LEARNING</p>
+        <h2>Skills &amp; Technologies</h2>
+      </div>
+
+      <p class="section-description">
+        Technologies and concepts I'm learning through coursework,
+        coding practice, and development projects.
+      </p>
+
+      <ul class="skill-list">
+        <li>C++</li>
+        <li>Data Structures &amp; Algorithms</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>MongoDB</li>
+        <li>Git &amp; GitHub</li>
+        <li>Python</li>
+        <li>TypeScript</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">03 / WHAT I'M BUILDING</p>
+        <h2>Featured Projects</h2>
+      </div>
+
+      <p class="section-description">
+        Search projects by name or technology, or filter them by category.
+      </p>
+
+      <div class="project-toolbar">
+        <div class="search-field">
+          <label for="project-search">Search projects</label>
+          <input id="project-search" type="search" placeholder="Try Python, Quiz, Book, React…" autocomplete="off">
+        </div>
+
+        <div class="filter-field">
+          <label for="project-filter">Category</label>
+          <select id="project-filter">
+            <option value="all">All projects</option>
+            <option value="web">Web development</option>
+            <option value="python">Python</option>
+            <option value="education">Education / productivity</option>
+            <option value="safety">Safety / navigation</option>
+          </select>
+        </div>
+      </div>
+
+      <p id="project-count" class="results-count" aria-live="polite">
+        Showing 5 projects
+      </p>
+
+      <ul class="project-grid" id="project-grid">
+
+        <li class="project-card" data-category="safety web"
+          data-search="saferoute safety pedestrian navigation jaipur react typescript node express leaflet">
+          <p class="project-index">PROJECT / 01</p>
+          <h3>Messy Python Code Improvement</h3>
+          <p>
+            Fixing messy, unreadable, and poorly organized Python scripts.
+            Adding proper structure, naming, comments, and formatting
+            without changing the functionality.
+          </p>
+          <p class="technology">
+            <strong>Technologies:</strong>
+            Python
+          </p>
+          <a class="project-link" href="https://github.com/deshdecode52-beep/MESSY" target="_blank"
+            rel="noopener noreferrer">
+            View repository ↗
+          </a>
+        </li>
+
+        <li class="project-card" data-category="education web"
+          data-search="disha quiz academia industry collaboration skill mapping internship placement portal react node express mongodb">
+          <p class="project-index">PROJECT / 02</p>
+          <h3>Quiz Project</h3>
+          <p>
+            A quiz platform project featuring academia–industry collaboration.
+            Includes skill mapping, internship connections, and career guidance
+            features.
+          </p>
+          <p class="technology">
+            <strong>Technologies:</strong>
+            HTML, CSS, JavaScript
+          </p>
+          <a class="project-link" href="https://github.com/deshdecode52-beep/QUIZ_25BCON1090" target="_blank"
+            rel="noopener noreferrer">
+            View repository ↗
+          </a>
+        </li>
+
+        <li class="project-card" data-category="python"
+          data-search="python programs collection factorial fibonacci structure dictionary dataclass asdict">
+          <p class="project-index">PROJECT / 03</p>
+          <h3>Python Programs Collection</h3>
+          <p>
+            A collection of Python programs demonstrating factorial
+            calculation, Fibonacci sequence generation, and converting
+            a dataclass object into a dictionary.
+          </p>
+          <p class="technology">
+            <strong>Technologies:</strong> Python, dataclasses
+          </p>
+          <a class="project-link" href="https://github.com/deshdecode52-beep/Python-program-collection" target="_blank"
+            rel="noopener noreferrer">
+            View repository ↗
+          </a>
+        </li>
+
+        <li class="project-card" data-category="web"
+          data-search="bug fix buggy code debugging testing python student utils">
+          <p class="project-index">PROJECT / 04</p>
+          <h3>BUG-FIX</h3>
+          <p>
+            A debugging and testing assignment repository involving
+            code review, documentation, and test cases.
+          </p>
+          <p class="technology">
+            <strong>Technologies:</strong> Python, debugging, testing, Git
+          </p>
+          <a class="project-link" href="https://github.com/deshdecode52-beep/BUG-FIX" target="_blank"
+            rel="noopener noreferrer">
+            View repository ↗
+          </a>
+        </li>
+
+        <li class="project-card" data-category="education web"
+          data-search="reading list book books tracker reading productivity javascript html css">
+          <p class="project-index">PROJECT / 05</p>
+          <h3>Reading List</h3>
+          <p>
+            A reading-list project for organising books and tracking
+            reading. Confirm the exact functionality in your repository.
+          </p>
+          <p class="technology">
+            <strong>Technologies:</strong> HTML, CSS, JavaScript
+          </p>
+          <a class="project-link" href="https://github.com/deshdecode52-beep/READING-LIST" target="_blank"
+            rel="noopener noreferrer">
+            View repository ↗
+          </a>
+        </li>
+
+      </ul>
+
+      <div id="no-projects" class="empty-state" hidden>
+        No projects match that search. Try another project name or technology.
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-heading">
+        <p class="eyebrow">04 / SAY HELLO</p>
+        <h2>Let's Connect</h2>
+      </div>
+
+      <p>
+        I'm interested in learning, collaborating on projects, and connecting
+        with people who are passionate about technology.
+      </p>
+
+      <ul class="contact-list">
+        <li>
+          GitHub:
+          <a href="https://github.com/deshdecode52-beep" target="_blank" rel="noopener noreferrer">
+            View my GitHub profile ↗
+          </a>
+        </li>
+        <li>Email: Add your preferred public email before publishing.</li>
+        <li>LinkedIn: Add your LinkedIn profile URL before publishing.</li>
+      </ul>
+    </section>
+
+    <section id="chatbot" class="section chatbot-section">
+      <div class="section-heading">
+        <p class="eyebrow">05 / ASK ABOUT MY WORK</p>
+        <h2>Portfolio AI Assistant</h2>
+      </div>
+
+      <p class="section-description">
+        Ask about my skills, projects, or the technologies used in them.
+      </p>
+
+      <div class="chat-panel">
+        <div class="chat-header">
+          <div>
+            <strong>Dhruv's Portfolio Assistant</strong>
+            <p>Answers are based on portfolio information.</p>
+          </div>
+          <span class="status-dot" aria-label="Assistant"></span>
+        </div>
+
+        <div id="chat-messages" class="chat-messages" role="log" aria-live="polite" aria-label="Chat messages">
+          <div class="chat-message assistant-message">
+            Hey! Ask me about Dhruv's skills, SafeRoute, the Quiz project,
+            Python programs, BUG-FIX, or the Reading List.
+          </div>
+        </div>
+
+        <div class="suggested-questions" aria-label="Suggested questions">
+          <button type="button" class="suggestion">Who are you?</button>
+          <button type="button" class="suggestion">Explain the Python programs</button>
+          <button type="button" class="suggestion">What is SafeRoute?</button>
+        </div>
+
+        <form id="chat-form" class="chat-form">
+          <label class="sr-only" for="chat-input">Ask a portfolio question</label>
+          <input id="chat-input" name="message" type="text" placeholder="Ask a question…" maxlength="500"
+            autocomplete="off" required>
+          <button class="btn btn-primary" type="submit" id="chat-send">
+            Send ↗
+          </button>
+        </form>
+
+        <p class="chat-disclaimer">
+          AI responses may be imperfect. Do not enter private information.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      &copy; <span id="year"></span> Dhruv Gupta.
+      Built with curiosity and a love for technology.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
